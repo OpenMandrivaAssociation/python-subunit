@@ -2,8 +2,8 @@
 %define module  subunit
 
 Name:           python-%{module}
-Version:        1.3.0
-Release:        %mkrel 5
+Version:        1.4.0
+Release:        1
 Summary:        Python implementation of subunit test streaming protocol
 Group:          Development/Python
 License:        ASL2.0 or BSD
@@ -11,17 +11,11 @@ URL:            https://launchpad.net/testrepository
 Source0:        https://pypi.io/packages/source/p/%{srcname}/%{srcname}-%{version}.tar.gz
 BuildArch:      noarch
 
-%description
-Subunit is a streaming protocol for test results.
-
-%package -n     python3-%{module}
-Summary:        Python 3 implementation of subunit test streaming protocol
-BuildRequires:  pkgconfig(python3)
+BuildRequires:  pkgconfig(python)
 BuildRequires:  python3dist(setuptools)
 %{?python_provide:%python_provide python3-%{module}}
-Obsoletes:      python2-%{module} < 1.3.0-4
 
-%description -n python3-%{module}
+%description
 Subunit is a streaming protocol for test results.
 
 %prep
@@ -31,12 +25,12 @@ Subunit is a streaming protocol for test results.
 rm -rf python_%{module}.egg-info
 
 %build
-%py3_build
+%py_build
 
 %install
-%py3_install
+%py_install
 
-%files -n python3-%{module}
+%files
 %{_bindir}/%{module}*
 %{_bindir}/tap2%{module}
-%{python3_sitelib}/*
+%{python_sitelib}/*
