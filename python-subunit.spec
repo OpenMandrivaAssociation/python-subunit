@@ -1,3 +1,5 @@
+%global __requires_exclude testtools
+
 %define srcname python-subunit
 %define module  subunit
 
