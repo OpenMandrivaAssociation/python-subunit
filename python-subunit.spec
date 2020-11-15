@@ -5,7 +5,7 @@
 
 Name:           python-%{module}
 Version:        1.4.0
-Release:        2
+Release:        3
 Summary:        Python implementation of subunit test streaming protocol
 Group:          Development/Python
 License:        ASL2.0 or BSD
