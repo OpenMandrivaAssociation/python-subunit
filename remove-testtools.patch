@@ -18,23 +18,3 @@ diff -uraN python_subunit-1.4.5/pyproject.toml omv-python_subunit-1.4.5/pyprojec
  description = "Python implementation of subunit test streaming protocol"
  dynamic = ["version"]
  keywords = ["python", "streaming", "test"]
-diff -uraN python_subunit-1.4.5/python/python_subunit.egg-info/PKG-INFO omv-python_subunit-1.4.5/python/python_subunit.egg-info/PKG-INFO
---- python_subunit-1.4.5/python/python_subunit.egg-info/PKG-INFO	2025-11-10 11:56:22.000000000 +0100
-+++ omv-python_subunit-1.4.5/python/python_subunit.egg-info/PKG-INFO	2025-12-14 15:50:20.895852930 +0100
-@@ -21,7 +21,6 @@
- Description-Content-Type: text/markdown
- License-File: COPYING
- Requires-Dist: iso8601
--Requires-Dist: testtools>=2.7
- Provides-Extra: docs
- Requires-Dist: docutils; extra == "docs"
- Provides-Extra: test
-diff -uraN python_subunit-1.4.5/python/python_subunit.egg-info/requires.txt omv-python_subunit-1.4.5/python/python_subunit.egg-info/requires.txt
---- python_subunit-1.4.5/python/python_subunit.egg-info/requires.txt	2025-11-10 11:56:22.000000000 +0100
-+++ omv-python_subunit-1.4.5/python/python_subunit.egg-info/requires.txt	2025-12-14 15:50:18.354074808 +0100
-@@ -1,5 +1,4 @@
- iso8601
--testtools>=2.7
- 
- [docs]
- docutils
