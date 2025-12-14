@@ -1,17 +1,17 @@
 %global __requires_exclude testtools
 
-%define srcname python-subunit
+%define srcname python_subunit
 %define module  subunit
 
 Name:           python-%{module}
-Version:        1.4.2
+Version:        1.4.5
 Release:        1
 Summary:        Python implementation of subunit test streaming protocol
 Group:          Development/Python
 License:        ASL2.0 or BSD
 URL:            https://launchpad.net/testrepository
 # Also https://pypi.org/project/python-subunit/
-Source0:        https://pypi.io/packages/source/p/%{srcname}/%{srcname}-%{version}.tar.gz
+Source0:        https://pypi.io/packages/source/p/%{srcname}/%{srcname}%{version}.tar.gz
 BuildArch:      noarch
 
 BuildRequires:  pkgconfig(python3)
@@ -22,7 +22,7 @@ BuildRequires:  python-extras
 Subunit is a streaming protocol for test results.
 
 %prep
-%setup -q -n %{srcname}-%{version}
+%setup -q -n %{srcname}%{version}
 
 # Remove bundled egg-info
 rm -rf python_%{module}.egg-info
