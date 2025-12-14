@@ -12,6 +12,7 @@ License:        ASL2.0 or BSD
 URL:            https://launchpad.net/testrepository
 # Also https://pypi.org/project/python-subunit/
 Source0:        https://pypi.io/packages/source/p/%{srcname}/%{srcname}-%{version}.tar.gz
+Patch0:         remove-testtools.patch
 BuildArch:      noarch
 
 BuildRequires:  pkgconfig(python3)
@@ -25,6 +26,7 @@ Subunit is a streaming protocol for test results.
 
 %prep
 %setup -q -n %{srcname}-%{version}
+%autopatch -p1
 
 # Remove bundled egg-info
 rm -rf python_%{module}.egg-info
