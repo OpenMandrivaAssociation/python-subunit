@@ -18,7 +18,6 @@ BuildRequires:  pkgconfig(python3)
 BuildRequires:  python%{pyver}dist(pip)
 BuildRequires:  python%{pyver}dist(setuptools)
 BuildRequires:  python%{pyver}dist(extras)
-BuildRequires:  python%{pyver}dist(iso8601)
 
 %description
 Subunit is a streaming protocol for test results.
