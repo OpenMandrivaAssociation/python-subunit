@@ -1,6 +1,6 @@
 diff -uraN python_subunit-1.4.5/pyproject.toml omv-python_subunit-1.4.5/pyproject.toml
 --- python_subunit-1.4.5/pyproject.toml	2025-11-10 11:54:11.000000000 +0100
-+++ omv-python_subunit-1.4.5/pyproject.toml	2025-12-14 15:41:32.522476535 +0100
++++ omv-python_subunit-1.4.5/pyproject.toml	2025-12-14 15:45:40.570600723 +0100
 @@ -1,6 +1,6 @@
  [build-system]
  build-backend = "setuptools.build_meta"
@@ -9,3 +9,12 @@ diff -uraN python_subunit-1.4.5/pyproject.toml omv-python_subunit-1.4.5/pyprojec
  
  [tool.ruff]
  line-length = 120
+@@ -20,7 +20,7 @@
+     "Programming Language :: Python",
+     "Topic :: Software Development :: Testing",
+ ]
+-dependencies = ["iso8601", "testtools>=2.7"]
++dependencies = ["iso8601"]
+ description = "Python implementation of subunit test streaming protocol"
+ dynamic = ["version"]
+ keywords = ["python", "streaming", "test"]
