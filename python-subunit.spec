@@ -16,7 +16,7 @@ BuildArch:      noarch
 
 BuildRequires:  pkgconfig(python3)
 BuildRequires:  python%{pyver}dist(setuptools)
-BuildRequires:  python-extras
+BuildRequires:  python%{pyver}dist(extras)
 
 %description
 Subunit is a streaming protocol for test results.
