@@ -5,7 +5,7 @@
 
 Name:           python-%{module}
 Version:        1.4.2
-Release:        1
+Release:        2
 Summary:        Python implementation of subunit test streaming protocol
 Group:          Development/Python
 License:        ASL2.0 or BSD
@@ -15,8 +15,10 @@ Source0:        https://pypi.io/packages/source/p/%{srcname}/%{srcname}-%{versio
 BuildArch:      noarch
 
 BuildRequires:  pkgconfig(python3)
+BuildRequires:  python%{pyver}dist(pip)
 BuildRequires:  python%{pyver}dist(setuptools)
-BuildRequires:  python-extras
+BuildRequires:  python%{pyver}dist(extras)
+BuildRequires:  python%{pyver}dist(iso8601)
 
 %description
 Subunit is a streaming protocol for test results.
