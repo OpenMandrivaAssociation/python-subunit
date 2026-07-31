@@ -4,8 +4,8 @@
 %define module  subunit
 
 Name:           python-%{module}
-Version:        1.4.2
-Release:        2
+Version:        1.4.6
+Release:        1
 Summary:        Python implementation of subunit test streaming protocol
 Group:          Development/Python
 License:        ASL2.0 or BSD
@@ -24,7 +24,7 @@ BuildRequires:  python%{pyver}dist(iso8601)
 Subunit is a streaming protocol for test results.
 
 %prep
-%setup -q -n %{srcname}-%{version}
+%setup -q -n python_subunit-1.4.6
 
 # Remove bundled egg-info
 rm -rf python_%{module}.egg-info
