@@ -40,6 +40,6 @@ rm -rf python_%{module}.egg-info
 %py_install
 
 %files
-%{_bindir}/%{module}*
-%{_bindir}/tap2%{module}
+# 1.4.6 adds gojson2subunit and junitxml2subunit, which do not match subunit*
+%{_bindir}/*subunit*
 %{python_sitelib}/*
