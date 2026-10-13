@@ -1,5 +1,3 @@
-%global __requires_exclude testtools
-
 %define srcname python-subunit
 %define module  subunit
 
@@ -19,6 +17,7 @@ BuildRequires:  python%{pyver}dist(pip)
 BuildRequires:  python%{pyver}dist(setuptools)
 BuildRequires:  python%{pyver}dist(extras)
 BuildRequires:  python%{pyver}dist(iso8601)
+BuildRequires:  python%{pyver}dist(testtools)
 
 %description
 Subunit is a streaming protocol for test results.
